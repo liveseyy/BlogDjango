@@ -1,5 +1,6 @@
 {% extends 'blog/base.html' %}
 {% load crispy_forms_tags %}
+{% load blog_tags %}
 
 {% block title %}
   {{ post.title }}
@@ -9,7 +10,7 @@
 
     <h1 class="mb-3">{{ post.title }}</h1>
     <p class="date">Published {{ post.publish }} by {{ post.author }}</p>
-    {{ post.body|linebreaks }}
+    {{ post.body|markdown }}
 
     {% if post.tags.all %}
         <p class="tags">
