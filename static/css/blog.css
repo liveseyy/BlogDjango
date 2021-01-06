@@ -1,0 +1,18 @@
+body{
+	background-color: gray;
+	padding: 30px;
+}
+body a{
+	text-decoration: none;
+}
+.step-links{
+	font-weight: bold;
+	padding: 15px;
+}
+.step-links a{
+	color: #fff;
+	font-weight: 700;
+}
+.step-links a:hover{
+	color: #fff;
+}
